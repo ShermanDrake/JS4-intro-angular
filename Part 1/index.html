@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>JS4 Intro to Angular</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</head>
+
+<body  ng-controller="textCtrl">
+
+<div>
+
+<button ng-click="myVar = !myVar">Click Me!</button>
+
+<p ng-hide="myVar">
+Why AngularJS?
+
+HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+
+<p ng-hide="myVar">
+Alternatives
+
+Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.</p>
+
+
+
+<p ng-hide="myVar">
+Extensibility
+
+AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.</p>
+
+<h1 ng-show="myVar">Hello :) Where did it go?</h1>
+
+</div>
+
+
+<div>
+
+<div>
+
+<button ng-click="myListVar = !myListVar">Click Me!</button>
+
+	<ul ng-hide="myListVar">
+		<li ng-repeat="item in List">
+			{{item}}
+		</li>	
+	</ul>
+
+</div>	
+
+</div>	
+
+
+</body>
+
+<script src="/Users/student/projects/Week2/JS4-intro-angular/main.js"></script> 
+
+</body>
+</html>
+
